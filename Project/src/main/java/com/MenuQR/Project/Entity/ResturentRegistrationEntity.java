@@ -1,5 +1,10 @@
 package com.MenuQR.Project.Entity;
 
+import java.util.Collection;
+
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -8,7 +13,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "resturent_registration_details")
-public class ResturentRegistrationEntity {
+public class ResturentRegistrationEntity implements UserDetails {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -85,5 +90,19 @@ public class ResturentRegistrationEntity {
 	public void setOwnerName(String ownerName) {
 		this.ownerName = ownerName;
 	}
+
+	@Override
+	public Collection<? extends GrantedAuthority> getAuthorities() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getUsername() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+
 
 }

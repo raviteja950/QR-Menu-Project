@@ -1,8 +1,14 @@
-com\MenuQR\Project\Util\RequestValidation.class
 com\MenuQR\Project\Model\StatusModel.class
 com\MenuQR\Project\Dao\ResturentRegistrationDaoImpl.class
-com\MenuQR\Project\Controller\RegistrationController.class
+com\MenuQR\Project\config\JwtAuthenticationFilter.class
+com\MenuQR\Project\config\SecurityConfiguration.class
+com\MenuQR\Project\config\jwtConfiguration.class
 com\MenuQR\Project\ProjectApplication.class
+com\MenuQR\Project\Model\ResturentRegistrationModel.class
+com\MenuQR\Project\Service\JwtService.class
+com\MenuQR\Project\Util\RequestValidation.class
+com\MenuQR\Project\Model\LoginResponce.class
+com\MenuQR\Project\Controller\RegistrationController.class
+com\MenuQR\Project\Controller\UserController.class
 com\MenuQR\Project\Dao\ResturentRegistartionDao.class
 com\MenuQR\Project\Entity\ResturentRegistrationEntity.class
-com\MenuQR\Project\Model\ResturentRegistrationModel.class
